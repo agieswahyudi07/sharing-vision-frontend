@@ -1,0 +1,11 @@
+services:
+  sharing-vision-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: http://localhost:8080
+    container_name: sharing-vision-frontend
+    restart: always
+    ports:
+      - "5173:80"

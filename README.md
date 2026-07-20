@@ -36,3 +36,17 @@ This is the frontend dashboard for the Sharing Vision recruitment test, built wi
    npm run dev
    ```
    Open your browser at `http://localhost:5173/` to view the application.
+
+## Running with Docker Compose
+
+You can build and run the Vue 3 frontend using Docker Compose:
+
+```bash
+docker compose up -d --build
+```
+
+- **Vue Frontend Dashboard**: Accessible at `http://localhost:5173/`.
+- To stop the service:
+  ```bash
+  docker compose down
+  ```
